@@ -12,6 +12,8 @@ FROM movies m
          JOIN genres g USING (genreid)
 GROUP BY g.name;
 
+
+
 CREATE TABLE query3 AS
 SELECT m.title, count(1) AS countofratings
 FROM ratings
